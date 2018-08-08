@@ -6,8 +6,13 @@
 
 def function(string_one, string_two)
   string_one.each_char do |chr|
-    if string_two.contains?(chr)
-      return True
+    if string_two.include?(chr)
+      return true
+    else
+      return false
     end
   end
 end
+
+puts "#{function('thisisabird', 'britishdias')} <----should be true"
+puts "#{function('blochduties', 'dutyfree')} <----should be false"
