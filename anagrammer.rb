@@ -14,5 +14,6 @@ def function(string_one, string_two)
   end
 end
 
-puts "#{function('thisisabird', 'britishdias')} <----should be true"
-puts "#{function('blochduties', 'dutyfree')} <----should be false"
+puts "two strings contain the same letters? #{function('thisisabird', 'britishdias')} <----should be true"
+puts "two strings contain the same letters? #{function('blochduties', 'dutyfree')} <----should be false"
+
